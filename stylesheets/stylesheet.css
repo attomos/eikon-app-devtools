@@ -61,7 +61,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 4rem 6rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
@@ -88,7 +88,6 @@ a {
     font-size: 1.75rem; } }
 
 .project-tagline {
-  margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.7; }
 
@@ -182,6 +181,7 @@ a {
   word-break: normal;
   word-break: keep-all; }
   .main-content table th {
+    text-align: left;
     font-weight: bold; }
   .main-content table th, .main-content table td {
     padding: 0.5rem 1rem;
@@ -219,27 +219,3 @@ a {
   .main-content {
     padding: 2rem 1rem;
     font-size: 1rem; } }
-
-.site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
-
-.site-footer-owner {
-  display: block;
-  font-weight: bold; }
-
-.site-footer-credits {
-  color: #819198; }
-
-@media screen and (min-width: 64em) {
-  .site-footer {
-    font-size: 1rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .site-footer {
-    font-size: 1rem; } }
-
-@media screen and (max-width: 42em) {
-  .site-footer {
-    font-size: 0.9rem; } }
