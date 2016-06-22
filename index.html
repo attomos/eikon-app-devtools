@@ -5,6 +5,7 @@
     <title>Eikon App Devtools</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/github.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
   </head>
@@ -12,7 +13,7 @@
     <section class="page-header">
       <h1 class="project-name">Eikon App Devtools</h1>
       <h2 class="project-tagline">
-        <pre>npm install --save-dev pirasis-l/eikon-app-devtools#0.0.10<br>cpurl://apps.cp./apps/eikon-app-devtools</pre>
+        <pre>npm install --save-dev pirasis-l/eikon-app-devtools#0.0.10</pre>
       </h2>
     </section>
 
@@ -20,13 +21,17 @@
       <h2>Getting start</h2>
       <p>
         Very simple, run this in node.js environment
-        <pre>require('eikon-app-devtools')();</pre>
+        <pre><code class="js">require('eikon-app-devtools')();</code></pre>
       </p>
 
       <h2>Modules</h2>
       <h3>Proxy</h3>
       <p>
-        <pre>// run with default options<br>require('eikon-app-devtools').proxy();<br><br>// or run with your custom options<br>require('eikon-app-devtools').proxy(options);</pre>
+        <pre><code class="js">// run with default options
+require('eikon-app-devtools').proxy();
+
+// or run with your custom options
+require('eikon-app-devtools').proxy(options);</code></pre>
 
         <table>
           <thead>
@@ -71,6 +76,7 @@
       </p>
     </section>
 
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
