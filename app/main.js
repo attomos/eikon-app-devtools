@@ -13,7 +13,7 @@ const socket = require('socket.io-client')('http://localhost:3000');
 import route from './route';
 import quotes from './quotes';
 import feed from './feed';
-import udf from './udf';
+import udf from './sections/udf';
 import proxy from './proxy';
 
 JET.init({ ID: 'a' });

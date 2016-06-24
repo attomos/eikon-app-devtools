@@ -10,55 +10,65 @@
 .content-wrapper {
   position: relative;
   transition: transform 0.4s;
-}
 
-.content-wrapper > .content-wrapper-inner > .content {
-  display: none;
+  > .content-wrapper-inner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ecf0f5;
+
+    > .content {
+      display: none;
+      height: calc(100% - 35px);
+
+      .box {
+        height: calc(100% - 20px);
+      }
+
+      .box-body {
+        height: 100%;
+        flex: 1;
+      }
+    }
+  }
 }
 
 .content-wrapper[show=udf] {
   transform: translateX(0);
 }
-.content-wrapper[show=udf] > #content-udf > .content {
+.content-wrapper[show=udf] > #section-udf > .content {
   display: block;
 }
 
 .content-wrapper[show=proxy] {
   transform: translateX(-100%);
 }
-.content-wrapper > #content-proxy {
+.content-wrapper > #section-proxy {
   left: 100%;
 }
-.content-wrapper[show=proxy] > #content-proxy > .content {
+.content-wrapper[show=proxy] > #section-proxy > .content {
   display: block;
 }
 
 .content-wrapper[show=quotes] {
   transform: translateX(-200%);
 }
-.content-wrapper > #content-quotes {
+.content-wrapper > #section-quotes {
   left: 200%;
 }
-.content-wrapper[show=quotes] > #content-quotes > .content {
+.content-wrapper[show=quotes] > #section-quotes > .content {
   display: block;
 }
 
 .content-wrapper[show=feed] {
   transform: translateX(-300%);
 }
-.content-wrapper > #content-feed {
+.content-wrapper > #section-feed {
   left: 300%;
 }
-.content-wrapper[show=feed] > #content-feed > .content {
+.content-wrapper[show=feed] > #section-feed > .content {
   display: block;
-}
-
-.content-wrapper-inner {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  min-height: 100%;
-  background-color: #ecf0f5;
 }
 
 table {
@@ -83,3 +93,6 @@ table td {
 #udf-table td:nth-child(n+5) {
   text-align: right;
 }
+
+@import '../node_modules/fixed-data-table/dist/fixed-data-table.css';
+@import 'sections/fixtable.scss';
